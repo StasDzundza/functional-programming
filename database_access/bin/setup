@@ -1,0 +1,6 @@
+#! /bin/bash
+
+set -xe
+
+mysql -uroot -h127.0.0.1 data_resources < db/db.sql
+stack install
